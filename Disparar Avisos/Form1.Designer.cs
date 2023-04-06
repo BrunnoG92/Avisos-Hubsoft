@@ -44,6 +44,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Txb_NomeCliente = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.Btn4_Config = new System.Windows.Forms.Button();
+            this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CmB_Aviso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmb_Atendente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmb_Tecnico)).BeginInit();
@@ -54,7 +56,7 @@
             // Btn1_Enviar
             // 
             this.Btn1_Enviar.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Btn1_Enviar.Location = new System.Drawing.Point(149, 488);
+            this.Btn1_Enviar.Location = new System.Drawing.Point(133, 529);
             this.Btn1_Enviar.Name = "Btn1_Enviar";
             this.Btn1_Enviar.Size = new System.Drawing.Size(114, 31);
             this.Btn1_Enviar.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -71,11 +73,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Poppins Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(9, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 25);
+            this.label1.Size = new System.Drawing.Size(175, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Tipo de Aviso:";
             // 
@@ -129,11 +131,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Poppins Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(10, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 24);
+            this.label2.Size = new System.Drawing.Size(125, 34);
             this.label2.TabIndex = 69;
             this.label2.Text = "N° Hubsoft";
             // 
@@ -156,22 +158,22 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Poppins Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(10, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 24);
+            this.label3.Size = new System.Drawing.Size(155, 34);
             this.label3.TabIndex = 71;
             this.label3.Text = "Técnico/Loja:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Poppins Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(10, 234);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 24);
+            this.label4.Size = new System.Drawing.Size(124, 34);
             this.label4.TabIndex = 72;
             this.label4.Text = "Atendente";
             // 
@@ -184,6 +186,7 @@
             "GESSIARA",
             "JANDEILSON",
             "JULIO",
+            "MARCOS VINICIUS",
             "RAMON",
             "SAMUEL",
             "VINICIUS"});
@@ -240,8 +243,10 @@
             "JOSÉ FELIPE",
             "JUNIOR",
             "KAREM",
+            "MAIRON",
             "LEIDIVAN",
             "LIDIA",
+            "LUCAS",
             "MAGNA",
             "NATALIA",
             "PEDRO AUGUSTO",
@@ -300,9 +305,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.TxtB_Codigo);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(3, 12);
+            this.groupBox1.Location = new System.Drawing.Point(5, 43);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(403, 325);
             this.groupBox1.TabIndex = 76;
@@ -329,8 +334,9 @@
             this.CLIENTE.Controls.Add(this.label5);
             this.CLIENTE.Controls.Add(this.Txb_NomeCliente);
             this.CLIENTE.Cursor = System.Windows.Forms.Cursors.No;
+            this.CLIENTE.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CLIENTE.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CLIENTE.Location = new System.Drawing.Point(3, 356);
+            this.CLIENTE.Location = new System.Drawing.Point(5, 398);
             this.CLIENTE.Name = "CLIENTE";
             this.CLIENTE.Size = new System.Drawing.Size(401, 116);
             this.CLIENTE.TabIndex = 77;
@@ -340,11 +346,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Poppins Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(22, 46);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 24);
+            this.label5.Size = new System.Drawing.Size(90, 34);
             this.label5.TabIndex = 76;
             this.label5.Text = "Cliente";
             // 
@@ -378,27 +384,67 @@
             this.Btn4_Config.ForeColor = System.Drawing.Color.White;
             this.Btn4_Config.Image = global::Disparar_Avisos.Properties.Resources.configuracao__2_;
             this.Btn4_Config.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn4_Config.Location = new System.Drawing.Point(3, 478);
+            this.Btn4_Config.Location = new System.Drawing.Point(5, 520);
             this.Btn4_Config.Name = "Btn4_Config";
             this.Btn4_Config.Size = new System.Drawing.Size(43, 51);
             this.Btn4_Config.TabIndex = 78;
             this.Btn4_Config.UseVisualStyleBackColor = true;
             this.Btn4_Config.Click += new System.EventHandler(this.Btn4_Config_Click);
             // 
+            // metroSetControlBox1
+            // 
+            this.metroSetControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroSetControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroSetControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.DisabledForeColor = System.Drawing.Color.DimGray;
+            this.metroSetControlBox1.IsDerivedStyle = true;
+            this.metroSetControlBox1.Location = new System.Drawing.Point(306, 0);
+            this.metroSetControlBox1.MaximizeBox = true;
+            this.metroSetControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroSetControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.MinimizeBox = true;
+            this.metroSetControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroSetControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.Name = "metroSetControlBox1";
+            this.metroSetControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroSetControlBox1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetControlBox1.StyleManager = null;
+            this.metroSetControlBox1.TabIndex = 79;
+            this.metroSetControlBox1.Text = "metroSetControlBox1";
+            this.metroSetControlBox1.ThemeAuthor = "Narwin";
+            this.metroSetControlBox1.ThemeName = "MetroLite";
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(364, 541);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(10, 10);
+            this.button1.TabIndex = 80;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.ClientSize = new System.Drawing.Size(412, 531);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ClientSize = new System.Drawing.Size(414, 592);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.metroSetControlBox1);
             this.Controls.Add(this.Btn4_Config);
             this.Controls.Add(this.CLIENTE);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Btn1_Enviar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Disparador De Email";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.CmB_Aviso)).EndInit();
@@ -429,6 +475,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox Txb_NomeCliente;
         private ComponentFactory.Krypton.Toolkit.KryptonButton Btn_OK;
         private System.Windows.Forms.Button Btn4_Config;
+        private MetroSet_UI.Controls.MetroSetControlBox metroSetControlBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

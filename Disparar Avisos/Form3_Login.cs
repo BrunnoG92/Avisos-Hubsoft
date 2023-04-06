@@ -21,9 +21,11 @@ namespace Disparar_Avisos
         public Form3_Login()
         {   
             InitializeComponent();
-           
+            BordasArredondadas.SetBorderlessStyle(this);
+            DraggableWindow draggable = new DraggableWindow(this);
+
             Form4_ConfigSQL ConfiguSQL = new Form4_ConfigSQL();
-         
+            kryptonLabel2.Font = new Font("Arial", 250, FontStyle.Bold);
             // Obtém o tamanho da PictureBox
             int width = pictureBox1.Width;
             int height = pictureBox1.Height;

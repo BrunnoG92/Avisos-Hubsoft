@@ -37,12 +37,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn4_ConfigSQL = new System.Windows.Forms.Button();
             this.BackgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TxB_PasswordSQL
             // 
-            this.TxB_PasswordSQL.Location = new System.Drawing.Point(103, 281);
+            this.TxB_PasswordSQL.Location = new System.Drawing.Point(103, 307);
             this.TxB_PasswordSQL.MaxLength = 30;
             this.TxB_PasswordSQL.Name = "TxB_PasswordSQL";
             this.TxB_PasswordSQL.PasswordChar = '*';
@@ -59,7 +60,7 @@
             // 
             // TxtB_UserSQL
             // 
-            this.TxtB_UserSQL.Location = new System.Drawing.Point(103, 211);
+            this.TxtB_UserSQL.Location = new System.Drawing.Point(103, 240);
             this.TxtB_UserSQL.MaxLength = 30;
             this.TxtB_UserSQL.Name = "TxtB_UserSQL";
             this.TxtB_UserSQL.Size = new System.Drawing.Size(190, 29);
@@ -75,7 +76,7 @@
             // 
             // Btn_Login
             // 
-            this.Btn_Login.Location = new System.Drawing.Point(117, 376);
+            this.Btn_Login.Location = new System.Drawing.Point(120, 381);
             this.Btn_Login.Name = "Btn_Login";
             this.Btn_Login.Size = new System.Drawing.Size(87, 31);
             this.Btn_Login.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -92,7 +93,7 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(12, 217);
+            this.kryptonLabel2.Location = new System.Drawing.Point(1, 240);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(71, 23);
             this.kryptonLabel2.StateCommon.LongText.Color1 = System.Drawing.Color.White;
@@ -105,7 +106,7 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(22, 287);
+            this.kryptonLabel1.Location = new System.Drawing.Point(12, 307);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(61, 23);
             this.kryptonLabel1.StateCommon.LongText.Color1 = System.Drawing.Color.White;
@@ -119,7 +120,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(103, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(103, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(159, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,7 +136,7 @@
             this.Btn4_ConfigSQL.ForeColor = System.Drawing.Color.White;
             this.Btn4_ConfigSQL.Image = global::Disparar_Avisos.Properties.Resources.configuracao__2_;
             this.Btn4_ConfigSQL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn4_ConfigSQL.Location = new System.Drawing.Point(2, 386);
+            this.Btn4_ConfigSQL.Location = new System.Drawing.Point(12, 371);
             this.Btn4_ConfigSQL.Name = "Btn4_ConfigSQL";
             this.Btn4_ConfigSQL.Size = new System.Drawing.Size(43, 51);
             this.Btn4_ConfigSQL.TabIndex = 79;
@@ -148,12 +149,39 @@
             this.BackgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker1_DoWork_1);
             this.BackgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BackgroundWorker1_RunWorkerCompleted);
             // 
+            // metroSetControlBox1
+            // 
+            this.metroSetControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroSetControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroSetControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.DisabledForeColor = System.Drawing.Color.DimGray;
+            this.metroSetControlBox1.IsDerivedStyle = true;
+            this.metroSetControlBox1.Location = new System.Drawing.Point(230, -2);
+            this.metroSetControlBox1.MaximizeBox = true;
+            this.metroSetControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroSetControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.MinimizeBox = true;
+            this.metroSetControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroSetControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroSetControlBox1.Name = "metroSetControlBox1";
+            this.metroSetControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroSetControlBox1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetControlBox1.StyleManager = null;
+            this.metroSetControlBox1.TabIndex = 80;
+            this.metroSetControlBox1.Text = "metroSetControlBox1";
+            this.metroSetControlBox1.ThemeAuthor = "Narwin";
+            this.metroSetControlBox1.ThemeName = "MetroLite";
+            // 
             // Form3_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.ClientSize = new System.Drawing.Size(330, 437);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ClientSize = new System.Drawing.Size(330, 462);
+            this.Controls.Add(this.metroSetControlBox1);
             this.Controls.Add(this.Btn4_ConfigSQL);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.kryptonLabel1);
@@ -161,9 +189,11 @@
             this.Controls.Add(this.Btn_Login);
             this.Controls.Add(this.TxB_PasswordSQL);
             this.Controls.Add(this.TxtB_UserSQL);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "Form3_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -181,5 +211,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn4_ConfigSQL;
         private System.ComponentModel.BackgroundWorker BackgroundWorker1;
+        private MetroSet_UI.Controls.MetroSetControlBox metroSetControlBox1;
     }
 }

@@ -7,6 +7,7 @@ using ComponentFactory.Krypton.Toolkit;
 using Disparar_Avisos.Models;
 using System.Xml.Serialization;
 using System.IO;
+using System.Drawing;
 
 namespace Disparar_Avisos
 {
@@ -18,8 +19,10 @@ namespace Disparar_Avisos
             
             InitializeComponent();
             Btn1_Enviar.Enabled= false;
+            BordasArredondadas.SetBorderlessStyle(this);
+            DraggableWindow draggable = new DraggableWindow(this);
             // Crie uma coleção de strings para armazenar os itens da combobox
-            
+
 
             if (Btn1_Enviar.Enabled == false )
             {
@@ -122,6 +125,31 @@ namespace Disparar_Avisos
                 // Se não estiver, cria um novo formulário
                 Form3_Login form = new Form3_Login();
                 form.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Cria um novo objeto ColorDialog
+            ColorDialog colorDialog = new ColorDialog
+            {
+                // Define a cor inicial da janela de diálogo
+                Color = System.Drawing.Color.Red
+,
+                // Define a descrição da janela de diálogo
+                FullOpen = true,
+                CustomColors = new int[] { 0xFF0000, 0xFFFF00, 0x00FF00, 0x00FFFF, 0x0000FF, 0xFF00FF, 0xC0C0C0, 0xFFFFFF }
+            };
+
+            // Exibe a janela de diálogo
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Obtém a cor selecionada
+                Color corSelecionada = colorDialog.Color;
+
+                // Use a cor selecionada em seu aplicativo
+                this.BackColor = corSelecionada;
+                this.Refresh();
             }
         }
     }

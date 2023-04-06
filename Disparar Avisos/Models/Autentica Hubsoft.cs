@@ -2,6 +2,7 @@
 using RestSharp;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Windows;
 using TesteHC;
 
 namespace Hubsoft_Auth
@@ -9,7 +10,7 @@ namespace Hubsoft_Auth
     public class Hubsoft_A
     {
         public string Autentica_Hubsoft()
-        {
+        {   
             Credenciais Configuracoes = Credenciais.Instance;
             Cripto Criptografa = new Cripto();
             var client = new RestClient(Configuracoes.HostAutentica);
